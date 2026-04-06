@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple RAG App</title>
+</head>
+<body>
+    <h1>📄 Upload Document</h1>
+
+    <form action="/upload/" enctype="multipart/form-data" method="post">
+        <input name="file" type="file">
+        <button type="submit">Upload</button>
+    </form>
+
+    <hr>
+
+    <h1>❓ Ask Question</h1>
+
+    <form action="/ask/" method="post">
+        <input type="text" name="question" placeholder="Ask something..." style="width:300px;">
+        <button type="submit">Ask</button>
+    </form>
+</body>
+</html>
